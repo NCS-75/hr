@@ -6,18 +6,16 @@
       <field name="model">hr.employee</field>
       <field name="inherit_id" ref="hr.view_employee_form"/>
       <field name="arch" type="xml">
-
-        <xpath expr="//page[@name='public']/group"  position="inside">
-          <group name="social_media" string="Social Media Accounts">
-            <field name="social_media_account_ids" nolabel="1">
-              <tree editable="bottom">
-                <field name='hr_social_media_id'/>
-                <field name='account_name'/>
-              </tree>
-            </field>
-          </group>
-        </xpath>
-
+          <xpath expr="//div[@id='o_work_employee_main']"  position="inside">
+              <group name="social_media" string="Social Media Accounts">
+                  <field name="social_media_account_ids" nolabel="1">
+                      <tree editable="bottom">
+                          <field name='hr_social_media_id'/>
+                          <field name='account_name'/>
+                      </tree>
+                  </field>
+              </group>
+          </xpath>
       </field>
     </record>
 

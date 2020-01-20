@@ -24,7 +24,6 @@ class HrSocialMediaAccount(models.Model):
     account_name = fields.Char(string="Account", required=True)
     employee_id = fields.Many2one("hr.employee", string="Employee", required=True)
 
-    @api.multi
     @api.depends("hr_social_media_id.name", "account_name")
     def _compute_name(self):
         for social_media_account in self:
