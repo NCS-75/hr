@@ -12,7 +12,7 @@
     "application": False,
     "summary": "Allows storing information about employee's family",
     "depends": ["hr"],
-    "external_dependencies": {"python": ["dateutil"]},
+    "external_dependencies": {"python": ["python-dateutil"]},
     "data": [
         "data/data_relative_relation.xml",
         "security/ir.model.access.csv",
